@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+</head>
+<body bgcolor="aqua">
+<form action="./insert/" method="post">
+    {% csrf_token %}
+    <table align="center" border="2">
+        <tr>
+            <td>Enter pid:</td>
+            <td><input type="text" name="t1"></td>
+        </tr>
+        <tr>
+            <td>Enter pname:</td>
+            <td><input type="text" name="t2"></td>
+        </tr>
+        <tr>
+            <td>Enter pcost:</td>
+            <td><input type="text" name="t3"></td>
+        </tr>
+        <tr>
+            <td>Enter pmfdt</td>
+            <td><input type="text" name="t4"></td>
+        </tr>
+        <tr>
+            <td>Enter pexdt:</td>
+            <td><input type="text" name="t5"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Insert">
+            </td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>
